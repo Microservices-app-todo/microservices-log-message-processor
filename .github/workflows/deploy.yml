@@ -48,3 +48,4 @@ jobs:
           --name ${{ secrets.CONTAINER_APP_NAME }} \
           --resource-group ${{ secrets.RESOURCE_GROUP }} \
           --image ${{ secrets.ACR_NAME }}.azurecr.io/log-message-processor:latest 
+          --revision-suffix rev-${{ github.run_number }}
