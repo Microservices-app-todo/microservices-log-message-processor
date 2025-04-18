@@ -13,7 +13,7 @@ RUN apk del .build-deps
 
 COPY . .
 
-ENV REDIS_HOST=redis.test
+ENV REDIS_HOST=redis
 ENV REDIS_PORT=6379
 ENV REDIS_CHANNEL=log_channel
 
